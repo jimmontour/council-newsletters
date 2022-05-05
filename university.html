@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-   <title>District Newsletter</title>
-   <style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Council Buzz Newsletter</title>
+    <style>
       /* -------------------------------------
           GLOBAL RESETS
       ------------------------------------- */
@@ -13,42 +12,42 @@
       /*All the styling goes here*/
 
       img {
-         border: none;
-         -ms-interpolation-mode: bicubic;
-         max-width: 100%;
-         margin: auto;
-         margin-bottom: 15px;
-          text-align:center;
-           display:block;
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
+        display: block;
       }
 
       body {
-         font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
-         background-color: #f6f6f6;
-         -webkit-font-smoothing: antialiased;
-         font-size: 14px;
-         line-height: 1.4;
-         margin: 0;
-         padding: 0;
+        font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+        background-color: #f6f6f6;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
       }
 
       table {
-         border-collapse: separate;
-         width: 100%;
+        border-collapse: separate;
+        width: 100%;
       }
 
       table td {
-         font-family: sans-serif;
-         font-size: 14px;
-         vertical-align: top;
+        font-family: sans-serif;
+        font-size: 14px;
+        vertical-align: top;
       }
 
       p {
-         font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+        font-family: "Fira Sans", Helvetica, Arial, sans-serif;
       }
 
       ul {
-         list-style-type: none;
+        list-style-type: none;
       }
 
       /* -------------------------------------
@@ -56,62 +55,62 @@
       ------------------------------------- */
 
       .body {
-         background-color: #f6f6f6;
-         width: 100%;
+        background-color: #f6f6f6;
+        width: 100%;
       }
 
       /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
       .container {
-         display: block;
-         margin: 0 auto !important;
-         /* makes it centered */
-         max-width: 580px;
-         padding: 10px;
-         width: 580px;
+        display: block;
+        margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 800px;
+        padding: 10px;
+        width: 800px;
       }
 
       /* This should also be a block element, so that it will fill 100% of the .container */
       .content {
-         box-sizing: border-box;
-         display: block;
-         margin: 0 auto;
-         max-width: 580px;
-         padding: 10px;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 10px;
       }
 
       /* -------------------------------------
           HEADER, FOOTER, MAIN
       ------------------------------------- */
       .main {
-         background: #ffffff;
-         border-radius: 3px;
-         width: 100%;
+        background: #ffffff;
+        border-radius: 3px;
+        width: 100%;
       }
 
       .wrapper {
-         box-sizing: border-box;
-         padding: 20px;
+        box-sizing: border-box;
+        padding: 20px;
       }
 
       .content-block {
-         padding-bottom: 10px;
-         padding-top: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
       }
 
       .footer {
-         clear: both;
-         margin-top: 10px;
-         text-align: center;
-         width: 100%;
+        clear: both;
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
       }
 
       .footer td,
       .footer p,
       .footer span,
       .footer a {
-         color: #999999;
-         font-size: 12px;
-         text-align: center;
+        color: #999999;
+        font-size: 12px;
+        text-align: center;
       }
 
       /* -------------------------------------
@@ -121,331 +120,355 @@
       h2,
       h3,
       h4 {
-         color: #000000;
-         font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
-         font-weight: 400;
-         line-height: 1.4;
-         margin: 0;
-         margin-bottom: 10px;
+        color: #000000;
+        font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 10px;
       }
 
       h1 {
-         font-size: 36px;
-         font-weight: 300;
-         text-align: center;
-         text-transform: capitalize;
+        font-size: 36px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize;
       }
 
       h2 {
-         font-weight: 700;
-         color: #1a4789
+        font-weight: 700;
+        color: #1a4789;
       }
 
       h3 {
-         color: grey
+        color: grey;
       }
 
       p,
       ul,
       ol {
-         font-family: sans-serif;
-         font-size: 14px;
-         font-weight: normal;
-         margin: 0;
-         margin-top: 15px;
-         margin-bottom: 15px;
-         line-height: 2;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: 2;
       }
 
       p li,
       ul li,
       ol li {
-         list-style-position: inside;
-         margin-left: 5px;
+        list-style-position: inside;
+        margin-left: 5px;
       }
 
       a {
-         color: #3498db;
-         text-decoration: underline;
+        color: #3498db;
+        text-decoration: underline;
       }
 
       /* -------------------------------------
           BUTTONS
       ------------------------------------- */
       .btn {
-         box-sizing: border-box;
-         width: 100%;
+        box-sizing: border-box;
+        width: 100%;
       }
 
-      .btn>tbody>tr>td {
-         padding-bottom: 15px;
+      .btn > tbody > tr > td {
+        padding-bottom: 15px;
       }
 
       .btn table {
-         width: auto;
+        width: auto;
       }
 
       .btn table td {
-         background-color: #ffffff;
-         border-radius: 5px;
-         text-align: center;
+        background-color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
       }
 
       .btn a {
-         background-color: #ffffff;
-         border: solid 1px #3498db;
-         border-radius: 5px;
-         box-sizing: border-box;
-         color: #3498db;
-         cursor: pointer;
-         display: inline-block;
-         font-size: 14px;
-         font-weight: bold;
-         margin: 0;
-         padding: 12px 25px;
-         text-decoration: none;
-         text-transform: capitalize;
+        background-color: #ffffff;
+        border: solid 1px #3498db;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #3498db;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        padding: 12px 25px;
+        text-decoration: none;
+        text-transform: capitalize;
       }
 
       .btn-primary table td {
-         background-color: #3498db;
+        background-color: #3498db;
       }
 
       .btn-primary a {
-         background-color: #3498db;
-         border-color: #3498db;
-         color: #ffffff;
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff;
       }
 
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
       .last {
-         margin-bottom: 0;
+        margin-bottom: 0;
       }
 
       .first {
-         margin-top: 0;
+        margin-top: 0;
       }
 
       .align-center {
-         text-align: center;
+        text-align: center;
       }
 
       .align-right {
-         text-align: right;
+        text-align: right;
       }
 
       .align-left {
-         text-align: left;
+        text-align: left;
       }
 
       .clear {
-         clear: both;
+        clear: both;
       }
 
       .mt0 {
-         margin-top: 0;
+        margin-top: 0;
       }
 
       .mb0 {
-         margin-bottom: 0;
+        margin-bottom: 0;
       }
 
       .preheader {
-         color: transparent;
-         display: none;
-         height: 0;
-         max-height: 0;
-         max-width: 0;
-         opacity: 0;
-         overflow: hidden;
-         mso-hide: all;
-         visibility: hidden;
-         width: 0;
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0;
       }
 
       .powered-by a {
-         text-decoration: none;
+        text-decoration: none;
       }
 
       hr {
-         border: 0;
-         border-bottom: 1px solid #f6f6f6;
-         margin: 20px 0;
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0;
       }
 
       /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
       @media only screen and (max-width: 620px) {
-         table.body h1 {
-            font-size: 28px !important;
-            margin-bottom: 10px !important;
-         }
+        table.body h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important;
+        }
 
-         table.body p,
-         table.body ul,
-         table.body ol,
-         table.body td,
-         table.body span,
-         table.body a {
-            font-size: 16px !important;
-         }
+        table.body p,
+        table.body ul,
+        table.body ol,
+        table.body td,
+        table.body span,
+        table.body a {
+          font-size: 16px !important;
+        }
 
-         table.body .wrapper,
-         table.body .article {
-            padding: 10px !important;
-         }
+        table.body .wrapper,
+        table.body .article {
+          padding: 10px !important;
+        }
 
-         table.body .content {
-            padding: 0 !important;
-         }
+        table.body .content {
+          padding: 0 !important;
+        }
 
-         table.body .container {
-            padding: 0 !important;
-            width: 100% !important;
-         }
+        table.body .container {
+          padding: 0 !important;
+          width: 100% !important;
+        }
 
-         table.body .main {
-            border-left-width: 0 !important;
-            border-radius: 0 !important;
-            border-right-width: 0 !important;
-         }
+        table.body .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important;
+        }
 
-         table.body .btn table {
-            width: 100% !important;
-         }
+        table.body .btn table {
+          width: 100% !important;
+        }
 
-         table.body .btn a {
-            width: 100% !important;
-         }
+        table.body .btn a {
+          width: 100% !important;
+        }
 
-         table.body .img-responsive {
-            height: auto !important;
-            max-width: 100% !important;
-            width: auto !important;
-         }
+        table.body .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important;
+        }
       }
 
       /* -------------------------------------
           PRESERVE THESE STYLES IN THE HEAD
       ------------------------------------- */
       @media all {
-         .ExternalClass {
-            width: 100%;
-         }
+        .ExternalClass {
+          width: 100%;
+        }
 
-         .ExternalClass,
-         .ExternalClass p,
-         .ExternalClass span,
-         .ExternalClass font,
-         .ExternalClass td,
-         .ExternalClass div {
-            line-height: 100%;
-         }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
 
-         .apple-link a {
-            color: inherit !important;
-            font-family: inherit !important;
-            font-size: inherit !important;
-            font-weight: inherit !important;
-            line-height: inherit !important;
-            text-decoration: none !important;
-         }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important;
+        }
 
-         #MessageViewBody a {
-            color: inherit;
-            text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-         }
+        #MessageViewBody a {
+          color: inherit;
+          text-decoration: none;
+          font-size: inherit;
+          font-family: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
 
-         .btn-primary table td:hover {
-            background-color: #34495e !important;
-         }
+        .btn-primary table td:hover {
+          background-color: #34495e !important;
+        }
 
-         .btn-primary a:hover {
-            background-color: #34495e !important;
-            border-color: #34495e !important;
-         }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important;
+        }
       }
 
       @media screen {
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 400;
+          src: local("Fira Sans Regular"), local("FiraSans-Regular"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)
+              format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvk4jLazX3dGTP.woff2) format('woff2');
-            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 400;
+          src: local("Fira Sans Regular"), local("FiraSans-Regular"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvk4jLazX3dGTP.woff2)
+              format("woff2");
+          unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 500;
-            src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveRhf6Xl7Glw.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 500;
+          src: local("Fira Sans Medium"), local("FiraSans-Medium"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveRhf6Xl7Glw.woff2)
+              format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 500;
-            src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveQhf6Xl7Gl3LX.woff2) format('woff2');
-            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 500;
+          src: local("Fira Sans Medium"), local("FiraSans-Medium"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveQhf6Xl7Gl3LX.woff2)
+              format("woff2");
+          unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 700;
-            src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eRhf6Xl7Glw.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 700;
+          src: local("Fira Sans Bold"), local("FiraSans-Bold"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eRhf6Xl7Glw.woff2)
+              format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 700;
-            src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eQhf6Xl7Gl3LX.woff2) format('woff2');
-            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 700;
+          src: local("Fira Sans Bold"), local("FiraSans-Bold"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eQhf6Xl7Gl3LX.woff2)
+              format("woff2");
+          unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 800;
-            src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnMK7eRhf6Xl7Glw.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 800;
+          src: local("Fira Sans ExtraBold"), local("FiraSans-ExtraBold"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnMK7eRhf6Xl7Glw.woff2)
+              format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-         @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 800;
-            src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnMK7eQhf6Xl7Gl3LX.woff2) format('woff2');
-            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-         }
+        @font-face {
+          font-family: "Fira Sans";
+          font-style: normal;
+          font-weight: 800;
+          src: local("Fira Sans ExtraBold"), local("FiraSans-ExtraBold"),
+            url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnMK7eQhf6Xl7Gl3LX.woff2)
+              format("woff2");
+          unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
       }
 
       #outlook a {
-         padding: 0;
+        padding: 0;
       }
 
       .ExternalClass,
       .ReadMsgBody {
-         width: 100%;
+        width: 100%;
       }
 
       .ExternalClass,
@@ -454,298 +477,209 @@
       .ExternalClass div,
       .ExternalClass span,
       .ExternalClass font {
-         line-height: 100%;
+        line-height: 100%;
       }
 
       div[style*="margin: 14px 0;"],
       div[style*="margin: 16px 0;"] {
-         margin: 0 !important;
+        margin: 0 !important;
       }
 
-      @media only screen and (min-width:621px) {
-         .pc-container {
-            width: 620px !important;
-         }
+      @media only screen and (min-width: 621px) {
+        .pc-container {
+          width: 620px !important;
+        }
       }
 
-      @media only screen and (max-width:620px) {
+      @media only screen and (max-width: 620px) {
+        .pc-menu-logo-s2,
+        .pc-menu-nav-s1 {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
 
-         .pc-menu-logo-s2,
-         .pc-menu-nav-s1 {
-            padding-left: 30px !important;
-            padding-right: 30px !important
-         }
+        .pc-cta-box-s4 .pc-cta-box-in {
+          padding: 35px 30px 30px !important;
+        }
 
-         .pc-cta-box-s4 .pc-cta-box-in {
-            padding: 35px 30px 30px !important
-         }
+        .pc-footer-box-s1,
+        .pc-products-box-s3 {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
 
-         .pc-footer-box-s1,
-         .pc-products-box-s3 {
-            padding-left: 10px !important;
-            padding-right: 10px !important
-         }
+        .pc-footer-row-s1 .pc-footer-row-col,
+        .pc-product-s3 .pc-product-col {
+          max-width: 100% !important;
+        }
 
-         .pc-footer-row-s1 .pc-footer-row-col,
-         .pc-product-s3 .pc-product-col {
-            max-width: 100% !important
-         }
+        .pc-product-s3.pc-m-invert {
+          direction: ltr !important;
+        }
 
-         .pc-product-s3.pc-m-invert {
-            direction: ltr !important
-         }
+        .pc-cta-box-s2 {
+          padding: 35px 30px !important;
+        }
 
-         .pc-cta-box-s2 {
-            padding: 35px 30px !important
-         }
-
-         .pc-spacing.pc-m-footer-h-46 td,
-         .pc-spacing.pc-m-footer-h-57 td {
-            font-size: 20px !important;
-            height: 20px !important;
-            line-height: 20px !important
-         }
+        .pc-spacing.pc-m-footer-h-46 td,
+        .pc-spacing.pc-m-footer-h-57 td {
+          font-size: 20px !important;
+          height: 20px !important;
+          line-height: 20px !important;
+        }
       }
 
-      @media only screen and (max-width:525px) {
-         .pc-menu-logo-s2 {
-            padding-bottom: 25px !important;
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-            padding-top: 25px !important
-         }
+      @media only screen and (max-width: 525px) {
+        .pc-menu-logo-s2 {
+          padding-bottom: 25px !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          padding-top: 25px !important;
+        }
 
-         .pc-menu-nav-s1 {
-            padding-left: 20px !important;
-            padding-right: 20px !important
-         }
+        .pc-menu-nav-s1 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
 
-         .pc-menu-nav-s1 .pc-menu-nav-divider {
-            padding: 0 !important
-         }
+        .pc-menu-nav-s1 .pc-menu-nav-divider {
+          padding: 0 !important;
+        }
 
-         .pc-cta-box-s4 .pc-cta-box-in {
-            padding: 25px 20px 20px !important
-         }
+        .pc-cta-box-s4 .pc-cta-box-in {
+          padding: 25px 20px 20px !important;
+        }
 
-         .pc-cta-s1 .pc-cta-title {
-            font-size: 24px !important;
-            line-height: 1.42 !important
-         }
+        .pc-cta-s1 .pc-cta-title {
+          font-size: 24px !important;
+          line-height: 1.42 !important;
+        }
 
-         .pc-cta-text br,
-         .pc-cta-title br,
-         .pc-footer-text-s1 br {
-            display: none !important
-         }
+        .pc-cta-text br,
+        .pc-cta-title br,
+        .pc-footer-text-s1 br {
+          display: none !important;
+        }
 
-         .pc-products-box-s3 {
-            padding: 15px 0 !important
-         }
+        .pc-products-box-s3 {
+          padding: 15px 0 !important;
+        }
 
-         .pc-cta-box-s2 {
-            padding: 25px 20px !important
-         }
+        .pc-cta-box-s2 {
+          padding: 25px 20px !important;
+        }
 
-         .pc-footer-box-s1 {
-            padding: 5px 0 !important
-         }
+        .pc-footer-box-s1 {
+          padding: 5px 0 !important;
+        }
       }
-   </style>
-</head>
+    </style>
+  </head>
 
-<body>
-   <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+  <body>
+    <table
+      role="presentation"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      class="body"
+    >
       <tr>
-         <td>&nbsp;</td>
-         <td class="container">
-            <div class="content">
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main">
+              <!-- START HEADER AREA -->
+              <tr style="background-color:white;"">
 
-               <!-- START CENTERED WHITE CONTAINER -->
-               <table role="presentation" class="main">
+               <a href="https://www.canva.com/design/DAE-Q_9wOYE/1DGNc8NgrkPtGHWRM6X3nw/view?utm_content=DAE-Q_9wOYE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="blank">
+               <img
+                  src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/1.png"
+                  alt=""
+                />
+                </a>
 
-                  <!-- START HEADER AREA -->
-                  <tr>
-                     <img src="https://jimmontour.github.io/council-newsletters/images/university-header.png" alt="">
-                     <img src="https://jimmontour.github.io/council-newsletters/images/university-hero.png" alt="">
+                <a href="https://calendar.google.com/calendar/u/0?cid=aDQxNG9yN3I5azJkdm45NGpsbzIwbmFxMzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="blank">
+                       <img
+                  src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/2.png"
+                  alt=""
+                />
+                </a>
 
-                     <!-- START MESSAGE FROM COUNCIL MEMBER AREA -->
-                     <td class="wrapper" style="background-color:#fffcf3">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" ">
-                           <tr>
-                              <td>
-                                 <p style=" text-align: center"">April 1, 2022 | Issue 02</p>
-                           <h2 style=" font-size: 36px; font-weight: 600; text-align: center; text-transform:
-                                    capitalize;">A Message From Council Member Wyatt
-                           </h2>
-                           <p style=" font-family: 'Fira Sans' , Helvetica, Arial, sans-serif; text-align:
-                                    justify;">
-                             Greetings University District Friends, I hope this newsletter finds you and your family in good spirits. We are more than halfway through winter and spring is just around the corner. Hopefully, this means sunshine, flowers and warmer temperatures are on their way.
-                             <br><br>
-                             The University District embarks on building and strengthening our community through partnerships and information. To date, we have had two successful events. The first was “Town Hall with Buffalo Police Commissioner.” This was an opportunity for the City of Buffalo residents to meet our new Police Commissioner Joseph Gramaglia. In this meeting the community communicated the needs and expectations they want. We have many activities in the making towards the up-bringing of our community. We would be grateful for your participation.
-                             <br><br>
-                             Together we can make the University District a safe place to live, learn, do business, and raise a family!
-                             <br><br>
-                             Your friend,
+                <img
+                  src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/3.png"
+                  alt=""
+                />
 
-                           </p>
-                           <img src="https://jimmontour.github.io/council-newsletters/images/university-headshot.png" alt="">
-                           <hr
-                              style="position: relative;top: 5px;border: none;height: 3px;background: #1A4789;margin-bottom: 10px;">
-                     </td>
-                  </tr>
-               </table>
-         </td>
+            <a href="https://fb.watch/cHIw7aqTB1/" target="blank">
+            <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/5-1.png"
+              alt=""
+            />
+            </a>
+
+            <a href="https://vimeo.com/696214259" target="blank">
+               <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/5-3.png"
+              alt=""
+            />
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=YD7coVAsnYM&list=PLi6cYD913a9eXqcyYwE4qJwVs_yYnbiJS&index=2" target="blank">
+            <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/6-1.png"
+              alt=""
+              style="margin: 0;"
+            />
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLi6cYD913a9eXqcyYwE4qJwVs_yYnbiJS" target="blank">
+            <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/6-2.png"
+              alt=""
+            />
+            </a>
+
+            <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/7.png"
+              alt=""
+            />
+
+            <a href="https://linktr.ee/bflo_cc" target="blank">
+            <img
+              src="https://jimmontour.github.io/council-newsletters/images/council-buzz/2/8.png"
+              alt=""
+            />
+            </a>
+
+            <p style="text-align: center; font-size: 16px">
+              <a href="mailto:councilstaff@buffalony.gov"
+                >Send us an email</a
+              > | <a href="https://linktr.ee/bflo_cc">Follow the Council on Social Media</a>
+            </p>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+              >
+                <tr>
+                  <td class="content-block">
+
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+          </div>
+        </td>
+        <td>&nbsp;</td>
       </tr>
-
-      <!-- END MESSAGE FROM COUNCIL MEMBER AREA -->
-
-      <!-- START ARTICLE 1 AREA -->
-      <td class="wrapper" style="background-color: #fffcf3;">
-         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-               <td>
-                  <h2 style="     font-size: 36px;
-         font-weight: 600;
-         text-align: center;
-         text-transform: capitalize;">Responsible Community Food Stores
-                  </h2>
-                  <h3 style="font-style: italic; text-align: center;">Council Member Wyatt wants food stores to respect neighborhood</h3>
-                  <img src="https://jimmontour.github.io/council-newsletters/images/university-foodstore.jpg" alt="">
-                  <p style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; text-align: justify;">
-                     On March 10 & 16, 2022, Lovejoy District Council Member Bollman and I hosted a Food Store License Renewal where we were able to hear from store owners, the Department of Inspections, the Buffalo Police Department, and the community regarding food stores in the community.
-                     <br><br>
-                     Residents deserve corner markets, delis and food stores that reflect their neighborhood in a positive way. They also deserve to be informed of the inspection and law enforcement role in maintaining high quality food stores that serve the community. The meetings we held were very productive and residents made their concerns heard to the business owners. I am proud to say it was a productive, respectful dialogue and the majority of business owners are amenable to the concerns of residents.
-                     <br><br>
-                     There are a few primary areas of concern. Stores cannot be allowed to leave stock and inventory strewn all over the sales floor. The clutter not only looks bad, it presents a danger to customers, especially senior citizens. I will not tolerate poorly maintained stores with trash in front of the building, selling loose cigarettes and drug paraphernalia inside. I would like to continue to see mutual respect between the residents and owners who take pride and invest in the neighborhood as their own. I appreciate the University District’s support in this effort.
-
-                  </p>
-                  <hr
-                     style="position: relative;top: 5px;border: none;height: 3px;background: #1A4789;margin-bottom: 10px;">
-            </tr>
-
-         </table>
-      </td>
-      </tr>
-      </td>
-      <!-- END ARTICLE 1 AREA -->
-
-       <!-- START ARTICLE 2 AREA -->
-      <td class="wrapper" style="background-color: #fffcf3;">
-         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-               <td>
-                  <h2 style="     font-size: 36px;
-         font-weight: 600;
-         text-align: center;
-         text-transform: capitalize;">Bailey Avenue Streetscape
-                  </h2>
-                  <h3 style="font-style: italic; text-align: center;">Huge infrastructure improvements beginning soon</h3>
-                  <img src="https://jimmontour.github.io/council-newsletters/images/university-baily.jpg" alt="">
-                  <p style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; text-align: justify;">
-                     Bailey Avenue has a long-rooted history in the University District. Finally, we are proud to announce that Bailey Avenue Streetscape construction will start in Spring 2023. This is a federally funded project that will cost 6 million dollars. Phase one will begin at Winspear Avenue to Dartmouth Avenue. Phase two will begin at Dartmouth Avenue to Kensington Avenue. The scope of work includes street paving, replacement of sidewalks, new drains, curbs, striping, street lighting system, and public art.
-                     <br><br>
-                     The City of Buffalo & Watts Architecture & Engineering will be hosting a series of community meetings to get your input. With over 50 local businesses, multiple schools, churches, and community centers on Bailey Avenue, Council Member Wyatt will make sure the community’s voice is heard throughout this process. We are looking forward to the new and improved Bailey Avenue that will increase economic development and a renewed pride within the University District.
-                     <br><br>
-                  </p>
-                  <hr
-                     style="position: relative;top: 5px;border: none;height: 3px;background: #1A4789;margin-bottom: 10px;">
-            </tr>
-
-         </table>
-      </td>
-      </tr>
-      </td>
-      <!-- END ARTICLE 2 AREA -->
-
-      <!-- START ARTICLE 3 AREA -->
-      <td class="wrapper" style="background-color: #fffcf3;">
-         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-               <td>
-                  <h2 style="     font-size: 36px;
-         font-weight: 600;
-         text-align: center;
-         text-transform: capitalize;">Using 311
-                  </h2>
-                  <h3 style="font-style: italic; text-align: center;">When and how to use Buffalo's 311 Hotline
-</h3>
-                  <img src="https://www.buffalony.gov/ImageRepository/Document?documentID=3695" alt="">
-                  <p style="font-family: 'Fira Sans', Helvetica, Arial, sans-serif; text-align: justify;">
-                     Residents call the University District Council Office for potholes, trash pick up, snow removal,overgrown weeds in empty lots..just to name a few common issues. We always strive to help in whatever way we can. I still encourage folks to always use the city’s 311 information system first. Simply dial 3-1-1. The city uses 311 calls as a data collection tool and the more calls they get into the system about a specific property or issue, the higher a priority it becomes.
-                     <br><br>
-                     Dial 311, give the operator details about what you would like to see addressed, and they will provide you a case number and the date they expect to address your concern. If you haven’t seen any improvement by the date 311 provided, call back with your case number and ask for an update. If still no progress, then call our office and we can begin troubleshooting creative ways to alleviate your concern.
-                  </p>
-                  <hr
-                     style="position: relative;top: 5px;border: none;height: 3px;background: #1A4789;margin-bottom: 10px;">
-            </tr>
-
-         </table>
-      </td>
-      </tr>
-      </td>
-      <!-- END ARTICLE 3 AREA -->
-
-
-      <!-- START EVENTS AREA -->
-      <td class="wrapper" style="background-color: #fffcf3">
-         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-               <td>
-                  <h2 style="     font-size: 36px;
-         font-weight: 600;
-         text-align: center;
-         text-transform: capitalize;">Events and Schedule</h2>
-                  <img src="https://jimmontour.github.io/council-newsletters/images/bulk-trash.jpg" alt="Bulk trash schedule">
-                  <img src="https://jimmontour.github.io/council-newsletters/images/cm-for-a-day.png" alt="Council Member For A Day">
-                  <img src="https://jimmontour.github.io/council-newsletters/images/firefighter-recruitment.png"alt="Become a Buffalo Firefighter">
-
-            </tr>
-         </table>
-      </td>
-      </tr>
-      </td>
-      <!-- END EVENTS AREA -->
-
-      <!-- START RESOURCES AREA -->
-
-      <!-- END RESOURCES AREA -->
-
-      <!-- START SOCIAL LINKS AREA -->
-      <td class="wrapper" style="background-color:#fffcf3">
-         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-
-
-            </tr>
-         </table>
-      </td>
-      </tr>
-      </td>
-      <!-- END SOCIAL LINKS AREA -->
-
-      <!-- END MAIN CONTENT AREA -->
-
-   </table>
-   <!-- END CENTERED WHITE CONTAINER -->
-
-   <!-- START FOOTER -->
-   <div class="footer">
-      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-         <tr>
-            <td class="content-block">
-               <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
-            </td>
-         </tr>
-      </table>
-   </div>
-   <!-- END FOOTER -->
-
-   </div>
-   </td>
-   <td>&nbsp;</td>
-   </tr>
-   </table>
-</body>
-
+    </table>
+  </body>
 </html>
